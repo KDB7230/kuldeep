@@ -1,0 +1,39 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		int english = sc.nextInt();
+	    int hindi = sc.nextInt();
+	    int maths = sc.nextInt();
+	    int science = sc.nextInt();
+	    int soscience = sc.nextInt();
+	    int sanskarit = sc.nextInt();
+	    double total = ((english+hindi+maths+science+soscience+sanskarit)*100)/600; 
+	    System.out.println(total);
+	    if(total>98){
+	        System.out.println("first rank");
+	    }
+	    else if(total>90){
+	        System.out.println("in this criteria 7 students(2 rank)");
+	    }
+	    else if(total>80){
+	        System.out.println("in this criteria 18 students(3 rank)");
+	    }
+	    else if(total>70){
+	        System.out.println("in this criteria 34 students(4 rank)");
+	    }
+	    else if(total>60){
+	        System.out.println("in this criteria 27 students(5 rank)");
+	    }
+	    else if(total>50){
+	        System.out.println("in this criteria 12 students(6 rank)");
+	    }
+	    else if(total>40){
+	        System.out.println("in this criteria 14 students(7 rank)");
+	    }
+	    else {
+	        System.out.println("fail");
+	    }
+	}
+}
